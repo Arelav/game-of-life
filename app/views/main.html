@@ -1,0 +1,8 @@
+<h1>Game of life</h1>
+<table>
+  <tr ng-repeat="row in world track by $index">
+    <td ng-repeat="cell in row track by $index">
+       <button class="btn" ng-class="(cell) ? 'btn-primary' : 'btn-default'" ng-click="cellToggle($parent.$index, $index)">&nbsp; </button>
+    </td>
+  </tr>
+</table>
