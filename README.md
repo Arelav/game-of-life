@@ -1,4 +1,4 @@
-photo-library
+Game of life
 =============
 
 To run dev environment, node.js requiered
