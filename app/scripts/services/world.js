@@ -8,8 +8,8 @@ angular.module('gameOfLifeApp')
     // Public API here
     return {
       create: function (width, height) {
-        this.width = width || 20;
-        this.height = height || 10;
+        this.width = width || 24;
+        this.height = height || 15;
         var world = [];
         for (var row = 0; row < this.height; row++) {
           world[row] = [];

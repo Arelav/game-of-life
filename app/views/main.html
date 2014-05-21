@@ -1,8 +1,12 @@
-<h1>Game of life</h1>
-<table>
+<div class="header row">
+  <h1 class="pull-left">Game of life</h1>
+  <button class="btn btn-primary play pull-right" ng-click="playPause()">Play/Pause</button>
+</div>
+
+<table class="row">
   <tr ng-repeat="row in world track by $index">
     <td ng-repeat="cell in row track by $index">
-       <button class="btn" ng-class="(cell) ? 'btn-primary' : 'btn-default'" ng-click="cellToggle($parent.$index, $index)">&nbsp; </button>
+       <button class="btn" ng-class="(cell) ? 'btn-primary' : 'btn-default'" ng-click="cellToggle($index, $parent.$index)">&nbsp; </button>
     </td>
   </tr>
 </table>
